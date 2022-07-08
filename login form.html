@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: linear-gradient(120deg,#007bff,#d0314c);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+
+        }
+        .myform{
+            margin: auto;
+            border: 2px solid black;
+            width: 350px;
+            margin-top: 140px;
+            height:500px;
+            border-radius: 10px;
+            background-color: rgb(244, 76, 210);
+        }
+        .inp{
+            padding: 17px;
+            margin: 25px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+        .inp1{
+            padding: 35px;
+            margin: 7px;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .sub{
+            text-align: center;
+        }
+        .sachin{
+            width: 262px;
+            border-radius: 20px;
+        }
+        h2 a{
+            text-decoration: none;
+            color: white;
+        }
+        label{
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myform">
+    <h1 style="text-align:center ; color: white;"> User Login</h1>
+    <hr>
+		<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+			<div class="inp">
+                <label for="">E-Mail:</label>
+            <input type="text" name="name" class="sachin" >
+            </div>
+            <div class="inp1 ">
+                <label for="">Password:</label>
+		    <input type="password" name="password" class="sachin">
+            </div>
+            <div class="sub">
+			<button class="btn btn-outline-dark w-75 rounded-pill text-light fw-bold">Submit</button> <br>
+            <h2 style="font-size: 20px;"><a href="sing up.html"> Create Account</a></h2>
+			</div>
+		</form>
+        </div>
+
+
+
+
+<script type="text/javascript">
+	function validateform(){
+		var name=document.myform.name.value;
+		var password=document.myform.password.value;
+
+
+		if (name==null||name=="") {
+			alert("name can not be empty");
+			return false;
+
+		}
+
+		else if(password.length<6){
+			alert("password must be 6 characters long");
+			return false;
+		}
+	}
+    </script>
+</body>
+</html>

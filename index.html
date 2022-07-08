@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/3e00a6d6cd.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- anisdgf -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+  
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/3e00a6d6cd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+</head>
+<style>
+  .carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+    max-width: 100%;
+    height: 17em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+</style>
+<body>
+  <div class="sachincontainer">
+    <div class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col">
+          <div class="padding">
+            <div class="dropdown">
+              <h4>products</h4>
+              <div class="dropdown-content">
+                <p><a href=""> Simple products</a></p>
+                <p><a href=""> Gallery</a></p>
+                <p><a href=""> Vidio</a></p>
+                <p><a href=""> External</a></p>
+                <p><a href=""> Grouped</a></p>
+                <p><a href=""> On sale</a></p>
+                <p><a href=""> Out of stock</a></p>
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+              <h4>Pages</h4>
+              <div class="dropdown-content">
+                <p><a href=""> about</a></p>
+                <p><a href=""> contect</a></p>
+                <p><a href=""> Typography</a></p>
+                <p><a href=""> wishlist</a></p>
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+              <h4>Blog</h4>
+              <div class="dropdown-content">
+                <p><a href=""> recent post</a></p>
+                <p><a href=""> Blog post</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col text-center text-light ">
+          <h3 class="dropdown">+91-8800724460</h3>
+        </div>
+        <div class="col dropdown">
+          <div class="log">
+            <h4><a href="login form.html"><i class="fa-solid fa-user-large">&nbsp;</i>Login</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <div class="photo">
+        <li><img src="../logo.jpg" alt="" height="70px"></li>
+      </div>
+      <li style="font-size:25px ;"><a href="#nav-profile-tab"><img src="../pizza.png" alt="" height="50px"></a><br>Pizza</li>&nbsp;&nbsp;
+      <li style="font-size :25px; "><a href="#nav-contact-tab"><img src="../noodles.png" alt="" height="50px"></a><br>noodles</li>&nbsp;&nbsp;
+      <li style="font-size: 25px;"><a href="#nav-tab"><img src="../hamburger.png" alt="" height="50px"></a><br> Burger</li>&nbsp;&nbsp;
+      <li style="font-size:25px ;"><a href=""><img src="../drink.png" alt="" height="50px"></a><br>Drinks</li>&nbsp;&nbsp;
+      <li style="font-size:25px ;"><a href=""><img src="../sweets.png" alt="" height="50px"></a><br>Dessert</li>&nbsp;&nbsp;
+      <li style="font-size:25px ;"><a href=""><img src="../steak.png" alt="" height="50px"></a><br>Steak</li>
+
+      <div class="icons">
+        <a href=""><i class="fa-brands fa-instagram">&nbsp;&nbsp;&nbsp;</i><i
+            class="fa-brands fa-twitter">&nbsp;&nbsp;&nbsp;</i><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <div>
+      </div>
+    </ul>
+    <div class="hamburger" id="myburger">&#9779</div>
+  </nav>
+  <div class="hamburgerfirst" id="hamburgerfirst">
+    <div class="photo1">
+      <li><img src="../logo.jpg" alt="" height="50px"></li>
+    </div>
+    <div class="second">
+      <ul>
+        <li><a href="">
+            <img src="../pizza.png" alt="" height="40px"></a><br>Pizza
+        </li>
+        <li><a href="">
+            <img src="../noodles.png" alt="" height="40px"></a><br>noodles
+        </li>
+        <li><a href=""><img src="../hamburger.png" alt="" height="40px"></a><br> Burger</li>
+        <li><a href=""><img src="../drink.png" alt="" height="40px"></a><br>Drinks</li>
+        <li><a href=""><img src="../sweets.png" alt="" height="40px"></a><br>Dessert</li>
+        <li><a href=""><img src="../steak.png" alt="" height="40px"></a><br>Steak</li>
+      </ul>
+      <div class="close" id="close">&#10060</div>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="hello">
+    <img src="../food order site//burger images.jpg" width="100%" height="600px" id="slide" alt="">
+  </div>
+
+
+  <div class="container-fluid ">
+    <div class="row bg-dark">
+      <div class="col-lg-6 mt-5">
+        <div class="mydiv">
+          <div data-aos="zoom-out-up">
+          <img src="../food order site/sheph.jpg" alt="" height="430px" width="100%">
+          </div>
+          <h3 style="color:white;text-align: center;">Louis Mckay</h3>
+          <h1 style="color: white;text-align: center;">"CHIEF"</h1>
+
+        </div>
+      </div>
+      <div class="col-lg-3 text-center">
+        <div>
+          <h1 style="color:white ;">WE SERVE PASSION</h1>
+          <div class="mydiv">
+            <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            <img src="../food order site/mypizaa.jpg" alt="">
+            <div style="font-size: 30px;font-weight:bold; color: white;">Pizza Bianca</div>
+            <div style="font-size: 19px;font-weight:bold; color: white;">Tomato Sauce'Mozzarella' <br> Parmesan
+              'Mascarpone' <br> Gorgonzola</div><br>
+            <button class="btn btn-outline-primary text-light fw-bold">thick</button> &nbsp;<button
+              class="btn btn-outline-primary text-light fw-bold">thin</button> <br>
+            <button class="btn btn-outline-primary text-light mt-2">25cm</button> <button
+              class="btn btn-outline-primary text-light mt-2">30cm</button> <button
+              class="btn btn-outline-primary text-light mt-2">35cm</button>
+            <div style="font-size: 30px;font-weight:bold; color: white;">$11.99</div>
+            <div class="cart">
+              <div style="font-size: 20px; "><a href="food order booking form.html"> <img src="../food order site/carts.png" alt="" height="30px"
+                    width="30px">&nbsp;Add To Cart</a></div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 text-center">
+
+        <div class="niche">
+          <h1 style="color:white ;">WE SERVE PASSION</h1>
+          <div class="mydiv">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+            <img src="../food order site/mypizza1.jpg" alt="">
+          
+            <div style="font-size: 30px;font-weight:bold; color: white;">Pizza Calabria</div>
+            <div style="font-size: 19px;font-weight:bold; color: white;">Tomato Sauce'Mozzarella' <br> 'Mascarpone'
+              Nduja spicy<br>Sausage-Rocket</div> <br>
+            <button class="btn btn-outline-primary text-light fw-bold">thick</button> &nbsp;<button
+              class="btn btn-outline-primary text-light fw-bold">thin</button> <br>
+            <button class="btn btn-outline-primary text-light mt-2">25cm</button> <button
+              class="btn btn-outline-primary text-light mt-2">30cm</button> <button
+              class="btn btn-outline-primary text-light mt-2">35cm</button>
+            <div style="font-size: 30px;font-weight:bold; color: white;">$13.99</div>
+            <div class="cart">
+              <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                    width="30px">&nbsp;Add To Cart</a></div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row bg-dark">
+      <div class="col-lg-4 mt-5">
+        <div class="imgcontent">
+          <img src="../food order site/myburger.jpg" height="360px" width="100%" alt="">
+          <div class="caption">
+
+            <h1 class="myclass">BIG BURGERS</h1>
+            <h3 class="myclass">BIG BURGERS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 mt-5">
+        <div class="imgcontent">
+          <img src="../food order site/japani sushi.jpg" height="360px" width="100%" alt="">
+          <div class="caption">
+            <h1 class="myclass">TRADITIONAL</h1>
+            <h3 class="myclass">JAPANESE SUSHI</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- button with dropdown -->
+  <div>
+    <nav>
+      <div class="nav nav-tabs  mt-4  fs-3" id="nav-tab" role="tablist">
+        <button class="nav-link active text-info fw-bold " id="nav-home-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+          aria-selected="true">BURGERS</button>
+        <button class="nav-link text-info fw-bold " id="nav-profile-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+          aria-selected="false">PIZZA</button>
+        <button class="nav-link text-info fw-bold" id="nav-contact-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+          aria-selected="false">NOODLE</button>
+        <!-- <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button> -->
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="container-fluid bg-dark ">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                <img src="../food order site/myimagesburger.jpg" alt="" width="100%">
+                </div>
+
+                <div style="font-size: 30px;font-weight: bold; color: white;">Aussie Burger</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">popular regional hemburger <br>ingredients
+                  in india.</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$13.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                <img src="../food order site/myimagesburger1.jpg" alt="" width="100%">
+                </div>
+                <div style="font-size: 30px;font-weight: bold; color: white;">California Burger</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">A hamburger served with chiken,
+                  <br>lettuce,tomato,and onion</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$18.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
+                <img src="../food order site/myimagesburger2.jpg" alt="" width="100%">
+                </div>
+                <div style="font-size: 30px;font-weight: bold; color: white;">Anjus burger</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">A hemburger made using beef<br>fromAngus
+                  cattle.</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$16.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
+                <img src="../food order site/myimagesburger3.jpg" alt="" width="100%">
+                </div>
+                <div style="font-size: 30px;font-weight: bold; color: white;">Chili burger</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">A hemburger served with
+                  chiken,chili,tamato,onion <br>ingredients in india.</div>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagespizza.jpg" alt="" width="100%">
+
+                <div style="font-size: 30px;font-weight: bold; color: white;">Pizza Calabria</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Tomato
+                  sauce'Mozzarella'<br>Mascarpone'Nduja' spicy Sausage-Rocket </div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$13.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagepizza1.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">Pizza Funghi</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Tomato sauce'Mozzarella'
+                  <br>Mushrooms-Thyme</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$18.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagespizza2.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">Pizza Carner</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Tomato sauce-'Mozzarella'
+                  chiken-beef<br>Ppperoni-onion Rosemery</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$16.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagespizza3.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">Pizza Regina</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Tomato sauce-'Mozzarella' permesan <br>
+                  Ham 'Mushrooms' blackolives</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+        <div class="container-fluid bg-dark ">
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagesnoodle.jpg" alt="" width="100%">
+
+                <div style="font-size: 30px;font-weight: bold; color: white;">Japanese udon noodle</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Japanese udon noodle with<br>Salmon Fish
+                </div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$11.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagesnoodle1.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">Singapure noodles</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">Cambines chicken,shrimp,and a <br>spicy
+                  sauce</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$18.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagesnoodle2.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">chicken show me</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">chiken,bok choy,celery,red
+                  ball<br>pepper,oyster sauce</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$16.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mydiv1">
+                <img src="../food order site/myimagesnoodle3.jpg" alt="" width="100%">
+                <div style="font-size: 30px;font-weight: bold; color: white;">Shanghai stir-Fry Noodles</div>
+                <div style="font-size: 19px;font-weight: bold; color: white;">beef meat,celery,red ball pepper <br>
+                  oyster sauce</div> <br>
+                <button class="btn btn-outline-primary fw-bold">Standard</button> &nbsp;<button
+                  class="btn btn-outline-primary  fw-bold">Big</button>
+                <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+                <div class="cart1">
+                  <div style="font-size: 20px; "><a href="food order booking form.html"><img src="../food order site/carts.png" alt="" height="30px"
+                        width="30px">&nbsp;Add To Cart</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark">
+    <div class="row">
+      <div class="mysachin">
+        <div class="back">
+          <div class="mysite">
+            <h1 style="color: white;font-weight: bold;text-align: center;">FOR 100%DISCOUNT <br> <SPAN>GET
+                PROMOCODE</SPAN></h1>
+            <div class="myinput text-center">
+              <input type="text" value="enter your email">
+              <button class="btn btn-outline-light fw-bold fs-3">send</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-dark">
+     <div class="container ">
+       <div class="row ">
+        <h1 style="text-align: center;font-weight:bold; padding: 50px; color: white;">FOODZ – RESTAURANT, PIZZA, FOOD DELIVERY IN YOUR HOME</h1>
+        <div class="col-lg-6 fs-2 text-light">Giving the pizza its unique flavor and texture is our speciality. Good sauce, right amount of cheese and great crust sets Fratello Pizza apart from other pizza joints .We have a good array of delicious pasta, subs, salads in addition to the more traditional pizzas and speciality pizzas.</div>
+        <div class="col-lg-6 fs-2 text-light">The interior is remarkably clean and so brightly lit and shiny that it’s almost sobering.Our service is quick, efficient, and polite. Come in or call today and experience the great flavor of Food. Good sauce, right amount of cheese and great crust sets Fratello Pizza.</div>
+       </div>
+     </div>
+  </div>
+
+  <!-- crausal -->
+
+
+  <div class="container-fluid bg-secondary pt-5">
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <h1 style="text-align: center; font-weight:bold; color: white;">OUR CLIENT REVIEWS</h1>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            
+                <div class="card">
+                    <div class="img-wrapper"><img src="../food order site/Elon Musk.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elon Musk</h5>
+                        <p class="card-text">Our customer reviews say it all: our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.</p>
+                        <div style="color:red ;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="../food order site/sunder pichai.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sunder pichai</h5>
+                        <p class="card-text">Our customer reviews say it all: our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.</p>
+                        <div style="color:red ;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="../food order site/modi.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Narendra Modi</h5>
+                        <p class="card-text">Our customer reviews say it all: our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.</p>
+                        <div style="color:red ;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="../food order site/sachin tendulkr.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sachin Tendulkar</h5>
+                        <p class="card-text">Our customer reviews say it all: our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <div style="color:red ;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="../food order site/virat koli.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Virat kohli</h5>
+                        <p class="card-text">Our customer reviews say it all: our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <div style="color:red ;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+          
+           
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row bg-dark">
+      <h1 style="color: white; text-align:center;padding:8px; font-size: 55px;">WE RECOMMEND</h1>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mydiv1">
+          <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <img src="../food order site/vegitable roll.jpg" alt="" width="100%">
+        </div>
+        <div style="font-size: 30px;font-weight: bold; color: white;">Vegitable Roll</div> <br>
+        <div style="font-size: 19px;font-weight: bold; color: white;">Cucumber,fresh carrect,sacllion<br>avocado</div>
+        <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+        <div class="cart1">
+          <div style="font-size: 20px; "><a href=""><img src="../food order site/carts.png" alt="" height="30px"
+                width="30px">&nbsp;Add To Cart</a></div>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6  text-center">
+        <div class="mydiv1">
+          <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <img src="../food order site/japani upon noodles.jpg" alt="" width="100%">
+        </div>>
+        <div style="font-size: 30px;font-weight: bold; color: white;">Japanese udon noodles</div>
+        <div style="font-size: 19px;font-weight: bold; color: white;">Japanese udon noodles with<br>salmon fish</div>
+        <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+        <div class="cart1">
+          <div style="font-size: 20px; "><a href=""><img src="../food order site/carts.png" alt="" height="30px"
+                width="30px">&nbsp;Add To Cart</a></div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mydiv1">
+          <div data-aos="fade-up"
+     data-aos-duration="3000">
+        <img src="../food order site/chilli burger.jpg" alt="" width="100%">
+        </div>
+        <div style="font-size: 30px;font-weight: bold; color: white;">Chili burger</div> <br>
+        <div style="font-size: 19px;font-weight: bold; color: white;">A hamberger served chicken,<br>chili,lettuce,tomato,and onion</div>
+        <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+
+        <div class="cart1">
+          <div style="font-size: 20px; "><a href=""><img src="../food order site/carts.png" alt="" height="30px"
+                width="30px">&nbsp;Add To Cart</a></div>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mydiv1">
+          <div data-aos="fade-up"
+     data-aos-duration="3000">
+        <img src="../food order site/dynamite roll.jpg" alt="" width="100%">
+        </div>
+        <div style="font-size: 30px;font-weight: bold; color: white;">dynamite Roll</div> <br>
+        <div style="font-size: 19px;font-weight: bold; color: white;">shrimp lempura,yellowtail,been<br>sprouts,carrect</div>
+        <div style="font-size: 30px;font-weight:bold; color: white;">$14.99</div>
+        <div class="cart1">
+          <div style="font-size: 20px; "><a href=""><img src="../food order site/carts.png" alt="" height="30px"
+                width="30px">&nbsp;Add To Cart</a></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-dark p-5 ">
+    <div class="row">
+      <h1 style="color:white ; text-align:center ;font-size: 60px;">BLOG SPOSTS</h1>
+      <div class="col-lg-4">
+        <div class = "hello4">
+          <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <img src="../food order site/blogimage.jpg" alt="" width="100%">
+        </div>
+        </div>
+        <p style="color: white;">APRIL 1,2022</p>
+        <H2 style="color: white;" >Few quips galvanized the <br>mock jury box</H2>
+        <p style="color: white;">The quick, brown fox jumps over a lazy dog. <br> DJs flock by when MTV ax quiz prog</p>
+
+      </div>
+      <div class="col-lg-4">
+        <div class = "hello4">
+          <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <img src="../food order site/blogimage1.jpg" alt="" height="360px" width="100%">
+        </div>
+        </div>
+        <p style="color: white;">may 3,2022</p>
+        <H2 style="color: white;">A quick movement  of the en- <br>emy will jeopardize six <br>gunboats </H2>
+        <p style="color: white;">My fixed joke won a pager in the cable TV quiz<br>show</p>
+      </div>
+      <div class="col-lg-4">
+        <div class = "hello4">
+          <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <img src="../food order site/blogimage3.jpg" alt="" width="100%">
+        </div>
+        </div>
+        <p style="color: white;">may 10,2022</p>
+        <H2 style="color: white;">Brawny <br>emy will jeopardize six <br>gunboats </H2>
+        <p style="color: white;">My fixed joke won a pager in the cable TV quiz<br>show</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mymybackgroud" ></div>
+
+  <div class="container-fluid bg-dark">
+    <div class="container bg-dark">
+      <div class="row text-center bg-dark">
+        <div class="col p-5">
+          <div class = "hello4">
+            <div data-aos="fade-up"
+     data-aos-duration="3000">
+     <img src="../food order site/watch1.jpg" alt="" height="  200px" >
+</div>
+          <!-- <img src="../food order site/watch1.jpg" alt="" height="  200px" > -->
+          </div>
+          <h1 style="color: white;">60 Min DELIVERY</h1>
+          <p style="font-weight: bold;color: white;">Blowzy red vixens fight for a <br> quick jump</p>
+        </div>
+        <div class="col p-5">
+          <div class = "hello4">
+            <div data-aos="fade-up"
+     data-aos-duration="3000">
+          <img src="../food order site/shef1.jpg" alt="" height="200px" >
+          </div>
+          </div>
+          <h1 style="color: white;">Best Shefs</h1>
+          <p style="font-weight: bold;color: white;">The quick, brown fox jumps over <br> a lazy dog</p>
+        </div>
+        <div class="col p-5">
+          <div class = "hello4">
+            <div data-aos="fade-up"
+     data-aos-duration="3000">
+          <img src="../food order site/cake.jpg" alt="" height="200px">
+          </div>
+          </div>
+          <h1 style="color: white;">Fresh Ingredients</h1>
+          <p style="font-weight:bold ;color:white ;">My faxed joke won a pager in the <br> cable TV quiz show</p>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row bg-secondary">
+      <div class="col-lg-4  p-4">
+           <img src="../logo.jpg" alt="" height="100px"> 
+           <!-- <button class="btn btn-outline-light">sac</button> -->
+            <!-- <button class="btn btn-outline-light pt-2">1-800-312-2121</button> -->
+            <p style="color: white;font-size: 30px;"class="p-3">555 California str, Suite 100 <br>San Francisco, CA 94107</p>
+            <button class="btn btn-outline-light pt-2">1-800-312-2121</button>
+      </div>
+       <div class="col-lg-4 p-5 ">
+        <h1 style="color: white; width: 90%;">SUBSCRIBE TO NEWSLETTER</h1> <br>
+        <p style="color: white;">Subscribe to the weekly newsletter for all the latest updates</p>
+        <div class="">
+          <input type="Email" placeholder="Your email address">
+          <button class="btn btn-outline-light fs-4">Sing Up</button>
+        </div>
+       </div> 
+       <div class="col p-4">
+        <div class="mymyicons">
+          <div class="mymyicons1">
+            <div data-aos="fade-up"
+            data-aos-duration="3000">
+            <span class="instaa "><a href=""><i class="fa-brands fa-instagram"></a></i></span>
+            <span class="faceb ps-4"><a href=""><i class="fa-brands fa-facebook-f"></a></i></span>
+            <span class="twitt ps-4"><a href=""><i class="fa-brands fa-twitter"></a></i></span>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+
+
+
+
+<script>
+  AOS.init();
+  DocumentTimeline="9s"
+</script>
+
+  <script>
+    function first() {
+      document.getElementById("slide").src = "noodle images.jpg";
+    }
+    function second() {
+      document.getElementById("slide").src = "desert images.jpg"
+    }
+    function three() {
+      document.getElementById("slide").src = "pizza images.jpg"
+    }
+    setInterval(first, 2000);
+    setInterval(second, 4000);
+    setInterval(three, 6000);
+  </script>
+
+</body>
+<script>
+  let myburger = document.getElementById("myburger");
+  let hamburgerfirst = document.getElementById("hamburgerfirst");
+  let closebtn = document.getElementById("close");
+  myburger.addEventListener("click", function () {
+    hamburgerfirst.style.width = "100vw";
+  })
+
+  closebtn.addEventListener("click", function () {
+    hamburgerfirst.style.width = "0";
+  })
+
+
+  // crausal
+  
+  let multipleCardCarousel = document.querySelector(
+  "#carouselExampleControls"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  let carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+  });
+  let carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  let cardWidth = $(".carousel-item").width();
+  let scrollPosition = 0;
+  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselExampleControls .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
+// crausal
+
+
+
+//crausal
+
+</script>
+
+</html>
