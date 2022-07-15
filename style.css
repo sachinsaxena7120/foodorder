@@ -197,7 +197,7 @@
 
   .mydiv1:hover{
     border: 3px solid green;
-    height: 590px;
+    height: 630px;
     transition: 2s all ease-in;
   }
   .mydiv1:hover .cart1{
